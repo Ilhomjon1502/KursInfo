@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditDarsFragment">
+
+    <TextView
+        android:id="@+id/txt_number_dars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:text="1-dars"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_fon"
+        android:hint="Dars nomi"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_fon"
+        android:hint="Dars bo'yicha ma'lu,ot"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edt_fon"
+        android:hint="Dars o'rni"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/btn_add_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_checked" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

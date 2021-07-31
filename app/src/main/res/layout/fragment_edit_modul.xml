@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditModulFragment">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotlin basic"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_margin="20sp"/>
+
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_fon"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edt_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_fon"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+        <FrameLayout
+            android:id="@+id/btn_add_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_checked"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

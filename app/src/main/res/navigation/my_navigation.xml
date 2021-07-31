@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mnsh.hom583kursinfo.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/kursFragment"
+        android:name="com.mnsh.hom583kursinfo.KursFragment"
+        android:label="fragment_kurs"
+        tools:layout="@layout/fragment_kurs" />
+    <fragment
+        android:id="@+id/darsListFragment"
+        android:name="com.mnsh.hom583kursinfo.DarsListFragment"
+        android:label="fragment_dars_list"
+        tools:layout="@layout/fragment_dars_list" />
+    <fragment
+        android:id="@+id/settingsHomeFragment"
+        android:name="com.mnsh.hom583kursinfo.SettingsHomeFragment"
+        android:label="fragment_settings_home"
+        tools:layout="@layout/fragment_settings_home" />
+    <fragment
+        android:id="@+id/kursInfoSettings"
+        android:name="com.mnsh.hom583kursinfo.KursInfoSettings"
+        android:label="fragment_kurs_info_settings"
+        tools:layout="@layout/fragment_kurs_info_settings" />
+    <fragment
+        android:id="@+id/darsInfoFragment"
+        android:name="com.mnsh.hom583kursinfo.DarsInfoFragment"
+        android:label="fragment_dars_info"
+        tools:layout="@layout/fragment_dars_info" />
+    <fragment
+        android:id="@+id/addModulFrsgment"
+        android:name="com.mnsh.hom583kursinfo.AddModulFrsgment"
+        android:label="fragment_add_modul_frsgment"
+        tools:layout="@layout/fragment_add_modul_frsgment" />
+    <fragment
+        android:id="@+id/editModulFragment"
+        android:name="com.mnsh.hom583kursinfo.EditModulFragment"
+        android:label="fragment_edit_modul"
+        tools:layout="@layout/fragment_edit_modul" />
+    <fragment
+        android:id="@+id/addDarsFragment"
+        android:name="com.mnsh.hom583kursinfo.AddDarsFragment"
+        android:label="fragment_add_dars"
+        tools:layout="@layout/fragment_add_dars" />
+    <fragment
+        android:id="@+id/editDarsFragment"
+        android:name="com.mnsh.hom583kursinfo.EditDarsFragment"
+        android:label="fragment_edit_dars"
+        tools:layout="@layout/fragment_edit_dars" />
+</navigation>

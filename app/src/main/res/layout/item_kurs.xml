@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image_item_kurs"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="10dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_launcher_background"/>
+            <TextView
+                android:id="@+id/txt_modul_name_item"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintVertical_bias="0.1"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/image_item_kurs"
+                app:layout_constraintBottom_toTopOf="@id/txt_kurs_name_2"
+                app:layout_constraintRight_toLeftOf="@id/frm_number"
+                android:text="Kotlin Basic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/txt_kurs_name_2"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintTop_toBottomOf="@id/txt_modul_name_item"
+                app:layout_constraintLeft_toRightOf="@id/image_item_kurs"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/frm_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android Development"
+                android:textColor="@color/gray_2"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/txt_batafsil"
+                app:layout_constraintLeft_toRightOf="@id/image_item_kurs"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintVertical_bias="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/frm_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batafsil"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+            <FrameLayout
+                android:id="@+id/frm_number"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/ic_number_fon_yellow"/>
+                <TextView
+                    android:id="@+id/txt_number_dars"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

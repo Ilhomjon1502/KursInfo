@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DarsInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/lin_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/lin_1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1"
+                app:layout_constraintWidth_percent="0.4">
+
+                <ImageView
+                    android:id="@+id/image_back"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/ic_back"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/fon_dars"
+                android:orientation="vertical"
+                android:padding="50dp"
+                app:layout_constraintLeft_toRightOf="@id/lin_1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.6">
+
+                <TextView
+                    android:id="@+id/txt_dars_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:text="1 - dars"
+                    android:textColor="@color/black"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_name_dars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kotlin
+dasturlash
+tili va tarixi"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txt_dars_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Kotlin - bu Android dasturlarini ishlab chiqish uchun juda mos keladi, zamonaviy tilning barcha afzalliklarini Android platformasiga hech qanday yangi cheklovlarsiz kiritadi:
+
+Moslashuvchanlik: Kotlin JDK 6-ga to'liq mos keladi, Kotlin ilovalari eski Android qurilmalarida muammosiz ishlashini ta'minlaydi. Kotlin vositasi Android Studio-da to'liq qo'llab-quvvatlanadi va Android OS tizimiga mos keladi.
+
+Samaradorlik: Kotlin loyihalarda bytekod tuzilishi tufayli Java-ga o'xshash ekvivalent kabi tez ishlaydi. Kotlin-ning ichki funksiyalarini qo'llab-quvvatlashi bilan lambdalardan foydalanadigan kod ko'pincha Java-da yozilgan koddan tezroq ishlaydi.
+"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</ScrollView>
